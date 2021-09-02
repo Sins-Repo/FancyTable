@@ -1,0 +1,70 @@
+%%%% Table 1 %%%%
+\begin{table}[htbp]
+\centering
+\begin{tabular}{c|c|c}
+\hline
+& Dataset I & Dataset II \\ 
+\hline \hline
+
+Custom CNN & 80.0 & 85.0\\ \hline
+CNN Variant & 90.0 & 95.0 \\ \hline
+
+\end{tabular}
+\caption{Accuracy for each model}
+\label{table1}
+\end{table}
+
+
+%%%% Table 2 %%%%
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+ & \multicolumn{2}{c|}{Test Accuracy (\%)} \\ \cline{2-3}
+ & Dataset I & Dataset II \\ \hline \hline
+Sample model I & 70.0 & 80.0 \\ \hline
+Sample model II & 80.0 & 90.0 \\ \hline
+Sample model III & \multicolumn{2}{c|}{99.0} \\\hline
+
+\end{tabular}
+\caption{Accuracy for each model}
+\label{table2}
+\end{table}
+
+
+%%%% Table 3 %%%%
+\begin{table}[!htbp]
+  \begin{center}
+    \caption{A fancy table with its caption on top}
+    \label{table3}
+    \begin{tabular}{|c|c|c|c|c|} 
+    \hline
+      & \textbf{Technique I} & \textbf{Technique II} &\multicolumn{2}{c|}{\textbf{Test accuracy (\%)} }\\ \cline{4-5}
+      & & & Dataset I & Dataset II \\
+      \hline \hline
+        Sample model I & * & \{SGD, RMSprop\} & 80.0 & 90.0 \\ \hline
+        Sample model II & * & \{SGD, RMSprop\} & 85.0 & 95.0 \\ \hline
+        Sample model III & XY & \{SGD\} & \multicolumn{2}{c|}{99.0} \\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+
+%%%% Table 4 %%%%
+\begin{table}[!htbp]
+  \begin{center}
+    \caption{Another fancy table with caption on its top}
+    \label{table4}
+    \begin{tabular}{|c|c|c|c|c|} 
+    \hline
+      & \multicolumn{2}{c|}{\textbf{Dataset I Result (\%)}} & \multicolumn{2}{c|}{\textbf{Dataset II Result (\%)}}\\ \cline{2-5}
+      & Technique I & Technique II & Technique I & Technique II \\ 
+      \hline \hline
+        Sample model I & 80.0 & 80.1 & 80.2 & 80.3\\ \hline
+        Sample model II  & 90.0 & 90.1 & 90.2 & 90.3\\ \hline
+        Sample model III & \multicolumn{4}{c|}{99.0}\\
+    \hline
+    \end{tabular}
+  \end{center}
+\end{table}
